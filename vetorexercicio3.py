@@ -16,7 +16,7 @@ while True:
     print("\n--- Cardapio ---")
     for codigo, (prato, preco) in cardapio.items():
         print(f"{codigo} - {prato} R$ {preco:.2f}")
-    escolha = int(input("\nDigite o codigo do prato (ou 0 para encerrar)"))
+    escolha = int(input("\nDigite o codigo do prato (ou 0 para encerrar): "))
 
     if escolha == 0:
         break
