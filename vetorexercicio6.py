@@ -5,9 +5,10 @@ valores = []
 
 for i in range(5):
     numero=int(input(f"Digite o {i+1}° numero: "))
-    valores.append(numero)
     if numero < 0:
-        numero == 0
+        numero = 0
+    valores.append(numero)
 
-for i in range(5):
-    print(f"\nNumeros informados: {valores[i]}")
+for i, numero in enumerate(valores, start=1):
+    print(f"{i}° Valor: {numero}")
+    
